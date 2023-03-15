@@ -17,3 +17,15 @@ header .line {
     max-width: 1140px;
     margin: auto;
 }
+
+.header-area  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+ }
+
+.header-left img {
+  width: 64px;
+  height: 64px;
+}
