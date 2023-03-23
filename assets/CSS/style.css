@@ -245,17 +245,22 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 769px) and (max-width: 1140px) {
+@media screen and (min-width: 769px) and (max-width: 1140px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
+  }
+
+  .header-menu {
+   margin-left: 20px;
   }
 
   .area1 {
@@ -263,7 +268,7 @@ footer {
   }
 
   .area2 {
-    grid-template-columns: 2fr 3fr ;
+    grid-template-columns: 2fr 3fr;
   }
 
   .area3 {
@@ -276,5 +281,66 @@ footer {
 
   .area4 {
     grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  .header-search input {
+    max-width: 80px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .banner-images img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .area1,
+  .area2,
+  .area3,
+  .area4 {
+    grid-template-columns: 1fr;
+  }
+
+  .area1-content,
+  .area2-content,
+  .area3-content,
+  .area4-content {
+    padding: 40px;
+  }
+
+  .area5 {
+    height: 200px;
+  }
+
+  footer {
+    font-size: 15px;
+    padding: 40px 20px;
+  }
+
+  .header-left img {
+    margin-left: 10px;
+  }
+
+  .header-search input {
+    max-width: 100px;
+    max-height: 27px;
   }
 }
